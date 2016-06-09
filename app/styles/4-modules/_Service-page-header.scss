@@ -1,0 +1,21 @@
+.Service-page-header {
+	font-size: 1rem;
+	& .--heading{
+		color: $light-black;
+		font-size: 2rem;
+		padding: 0.625em;
+		border-bottom: 1px solid $gold;
+	}
+	& .--info{
+		& .Hero-image {
+			@media(min-width: 500px) {
+				float: right;
+				margin-left: 10px;
+			}
+		}
+		& .--context {
+			font-size: 1.2rem;
+			font-weight: normal;
+		}
+	}
+}

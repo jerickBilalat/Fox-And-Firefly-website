@@ -1,0 +1,10 @@
+.Hero-image {
+	max-width: 100%;
+	position: relative;
+	margin-bottom: 1.25rem;
+
+	& .--slider {
+		width: 90%;
+		margin: 0 auto;
+	}
+}

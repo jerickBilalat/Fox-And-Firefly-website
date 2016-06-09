@@ -1,0 +1,9 @@
+.float-wrapper {
+	&:before, &:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+

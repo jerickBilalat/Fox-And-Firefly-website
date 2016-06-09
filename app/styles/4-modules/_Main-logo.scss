@@ -1,0 +1,22 @@
+
+.Main-logo {
+	width: 30%;
+	min-width: 18.0869em;
+	height: 6.25em;
+	border: 1px solid $gold;
+	margin: 1.25em auto;
+	letter-spacing: 5px;
+
+	& .--logo-text {
+		h1 {
+			font-size: 2em;
+			text-align: center;
+			font-weight: normal;
+		}
+
+		span {
+			font-weight: bold;
+			color: $gold;
+		}
+	}
+}

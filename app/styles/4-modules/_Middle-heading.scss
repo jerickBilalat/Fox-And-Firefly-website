@@ -1,0 +1,16 @@
+.Middle-heading {
+	width: 50%;
+	min-width: 18.0869em;
+	margin: 0 auto 1.25em;
+	background-color: $white;
+	font-size: 1rem;
+	text-align: center;
+
+	& .--heading {
+		text-align: center;
+		color: $gold;
+		padding: 0.625em;
+		border-bottom: 1px solid $gold;
+	}
+
+}

@@ -1,0 +1,56 @@
+.Info-card {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font: 1rem;
+
+	& .--photo {
+		display: block;
+		margin-right: 10px;
+		margin-left: 10px;
+		float: left;
+		border: 1px solid black;
+		border-radius: 10%;
+		width: 200px;
+		height: 200px;
+		background-image: url(../images/bong-danica.jpg);
+		background-position: top right;
+		background-size: cover;
+	}
+
+	& .--info {
+		font-size: 1em;
+		width: 380px;
+		margin: 0 10px;
+		flex-grow: 2;
+
+		& .author {
+			font-size: 0.9em;
+			margin: 20px 0;
+			float: right;
+		}
+		
+		& .mail, & .phone {
+			text-decoration: none;
+			color: inherit;
+			background-repeat: no-repeat;
+			padding-left: 30px;
+
+			&:hover {
+				color: $gold;
+				text-decoration: underline;
+			}
+		}
+		& .mail {;
+			background-image: url('../images/mail.svg');
+			margin-right: 10px;
+		}
+
+		& .phone {
+			background-image: url('../images/phone.svg');
+		}
+	}
+
+	
+}

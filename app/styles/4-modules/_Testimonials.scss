@@ -1,0 +1,42 @@
+.Testimonial {
+	blockquote {
+		width: 70%;
+	  background: #f9f9f9;
+	  margin: 1.5em auto;
+	  quotes: "\201C""\201D""\2018""\2019";
+
+	  &:before {
+	  	color: #ccc;
+	  	content: open-quote;
+	  	font-size: 4em;
+	  	line-height: 0.1em;
+	  	margin-right: 0.25em;
+	  	vertical-align: -0.4em;
+	  }
+
+	  & p {
+	  	font-size: 1.2em;
+	  	display: inline;
+	  }
+
+	  @media (max-width: 560px) {
+	  	width: 80%;
+	  }
+	}
+
+	& .--author {
+		margin: 0 auto;
+		width: 30%;
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: 10%;
+		}
+
+		p {
+			display: inline;
+			vertical-align: top;
+			margin-left: 10px;
+		}
+	}
+}

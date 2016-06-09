@@ -1,0 +1,92 @@
+.ribbon {
+  width: 80%;
+  padding: 10px;
+  margin: 5% auto;
+  background-color: $light-green;
+  position: relative;
+
+  & .--content {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    display: inline-block;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px;
+        border: 1px solid $light-green;
+        &:hover {
+          color: $gold;
+          border-color: $gold;
+          cursor: pointer;
+        }
+
+      }
+
+      & a.active {
+        color: $gold;
+      }
+
+      // fold
+      &:before, &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px;
+        position: absolute;
+        top: -16px;
+      }
+
+      &:before {
+        left: 0;
+        border-color: transparent $light-green-lightenx2 $light-green-lightenx2 transparent;
+      }
+      &:after {
+        right: 0;
+        border-color: transparent transparent $light-green-lightenx2 $light-green-lightenx2;
+      }
+      // end fold
+  }
+
+  // edge
+  &:before, &:after {
+    content:"";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 23px;
+    top: -16px;
+    z-index: -1;
+  }
+
+  &:before {
+    // width of the left edge
+    border-right-width: 50px;
+    left: -57px;
+    border-color: $light-green-lightenx1 $light-green-lightenx1 $light-green-lightenx1 transparent;
+  }
+
+  &:after {
+    // width of the right edge
+    border-left-width: 50px;
+    right: -57px;
+    border-color: $light-green-lightenx1 transparent $light-green-lightenx1 $light-green-lightenx1;
+  }
+  // end edge
+
+}
+
+
+
+
+
+
+
+
+

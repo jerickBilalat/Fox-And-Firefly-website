@@ -1,0 +1,16 @@
+// this should be in layout
+.Cards {
+	font-size: 1em;
+	padding: 0.625rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	& .--card {
+		margin-bottom: 1.25em;
+		margin-right: 1.25em;
+		&:nth-child(3), &:nth-child(6) {
+			margin-right: 0;
+		}
+	}
+}

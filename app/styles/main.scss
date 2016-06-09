@@ -1,0 +1,67 @@
+// bower:scss
+// endbower
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// tools
+@import "1-tools/fonts.scss";
+@import "1-tools/normalize";
+@import "1-tools/toast-grid";
+@import "1-tools/rslider";
+@import "1-tools/fonts.scss";
+
+// base
+@import "2-base/variables";
+@import "2-base/root";
+@import "2-base/typepography";
+
+
+
+// layouts
+@import "3-layouts/main-header.scss";
+@import "3-layouts/main-wrapper.scss";
+@import "3-layouts/main-nav-wrapper.scss";
+@import "3-layouts/testimonials-wrapper.scss";
+@import "3-layouts/float-wrapper.scss";
+
+
+// modules
+@import "4-modules/Main-logo.scss";
+@import "4-modules/Hero-image.scss";
+@import "4-modules/Middle-heading.scss";
+@import "4-modules/Polaroid.scss";
+@import "4-modules/Card.scss";
+@import "4-modules/Info-card.scss";
+@import "4-modules/Testimonials.scss";
+@import "4-modules/Ribbon-nav.scss";
+@import "4-modules/Footer-nav.scss";
+@import "4-modules/Service-page-header";
+
+@import "2-base/test";

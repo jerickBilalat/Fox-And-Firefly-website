@@ -1,0 +1,25 @@
+.Polaroid {
+	position: relative;
+
+	&:hover {
+		cursor: pointer;
+		& .Polaroid--label {
+			color: $gold;
+		}
+	}
+
+	& .Polaroid--picture {
+		border: 0.625em solid $silver;
+		border-bottom: 2.8125em solid $silver;
+	}
+
+	& .Polaroid--label {
+		position: absolute;
+		 text-align: center;
+		 width: 100%;
+		 bottom: 0px;
+		 font-family: 'Dacing Script', cursive;
+		 color: #888;
+	}
+	
+}

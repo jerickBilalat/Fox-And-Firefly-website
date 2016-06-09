@@ -1,0 +1,25 @@
+
+
+
+@mixin clearfix {
+	&:before &:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+#rslide-wrapper, .rslides_container {
+	margin-bottom: 10px;
+}
+
+.session {
+	font-family: cursive;
+	color: $gold;
+	font-size: 1.2rem;
+}
+
+.note {
+	font-size: 0.9rem;
+}
